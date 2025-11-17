@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higiro Mirror Tech Services</title>
+    <link rel="icon" type="image/png" href="higirologo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+:root {
+    --primary-color: #06195e;
+    --secondary-color: #2238df;
+    --accent-color: #d5ff4d;
+    --dark-bg: #06195e;
+    --text-on-accent: #06195e;
+}
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg') center/cover;
+            min-height: 100vh;
+            color: #d5ff4d;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-dark.bg-dark {
+            background-color: var(--dark-bg) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: #1a4bdf;
+            border-color: #1a4bdf;
+        }
+
+        .whatsapp-btn {
+            background-color: var(--accent-color) !important;
+            color: var(--text-on-accent) !important;
+        }
+
+        .client-caption {
+            color: var(--secondary-color);
+        }
+
+        .gallery-section {
+            padding: 5rem 0;
+        }
+        .gallery-item {
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+}
+
+.client-logo {
+    position: relative;
+    overflow: hidden;
+}
+
+.client-logo figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(10, 26, 58, 0.8);
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.client-logo:hover figcaption {
+    opacity: 1;
+}
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="higirologo.png" alt="Logo" width="40" class="me-2">
+                <B><i>Higiro Mirror Tech Services</i></B>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+<!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4 animate__animated animate__fadeInDown">Your Trusted IT Solutions Partner</h1>
+            <p class="lead mb-4">24/7 Support • Secure Solutions • Rapid Response</p>
+            <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Our Services</h2>
+            <div class="row g-4">
+                <!-- Service cards will be dynamically populated via JavaScript -->
+            </div>
+        </div>
+    
+
+    
+<style>
+.carousel-item {
+    transition: transform 1s ease-in-out !important;
+}
+.client-logo {
+    transition: transform 0.3s ease;
+}
+</style>
+
+<!-- About Us Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 display-4">About Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead">Higiro Mirror Tech Services is a leading IT solutions provider offering comprehensive technology support since 2022. We specialize in enterprise network setup, government e-services integration, and custom web application development.</p>
+                <p>Our team of certified professionals delivers 24/7 remote support, secure data management solutions, and professional branding services. We partner with major institutions like RRA and RDB to streamline digital transformation.</p>
+                <p>With our cutting-edge monitoring systems and SLA-driven approach, we ensure maximum uptime for business-critical operations. Our client-first philosophy has earned us recognition as Rwanda's fastest growing tech support company.</p>
+            </div>
+        </div>
+
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <!-- Form fields -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" required>
+                                <option value="">Select Service</option>
+                                <option>IT Support</option>
+                                <option>Online Services</option>
+                                <option>Web Development</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/250789733274" class="whatsapp-btn btn btn-success" target="_blank">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dynamic service population
+        const services = [
+            { title: 'IT Support', icon: 'fa-server', description: 'Network setup, monitoring, and maintenance' },
+            { title: 'Online Services', icon: 'fa-globe', description: 'Irembo, RRA, RDB services integration' },
+            { title: 'Web Development', icon: 'fa-code', description: 'Custom website & web application development' },
+            { title: 'Data Recovery', icon: 'fa-database', description: 'Secure backup and disaster recovery solutions' },
+            { title: 'Branding', icon: 'fa-palette', description: 'Professional graphic design & branding services' },
+            { title: 'Remote Support', icon: 'fa-headset', description: '24/7 remote technical assistance' }
+        ];
+
+        function populateServices() {
+            const container = document.querySelector('#services .row');
+            container.innerHTML = services.map(service => `
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas ${service.icon} fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">${service.title}</h5>
+                            <p class="card-text">${service.description}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            populateServices();
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Form validation
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(e) {
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+</body>
+</html>
